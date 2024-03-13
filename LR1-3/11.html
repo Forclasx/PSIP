@@ -1,24 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+    
 <head>
-      <!-- Стиль таблицы -->
-      <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя HTML-страница</title>
- <!-- Мета-теги -->
+     <!-- Мета-теги -->
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Моя HTML-страница</title>
 <meta content="Моя веб-страница" name="description">
 <meta content="Ваше имя" name="author">
+    <link rel="stylesheet" href="body.css" />
+    
+      <style>
+         @import url('form.css');
+        
+        /* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            text-align: center;
+        }
+        ul, ol {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 50%; 
+            height: auto;
+            border-radius: 50%;
+        }
+
+ 
+
+/* Стили для ошибок валидации */
+input:invalid {
+    border-color: red;
+}
+
+
+    </style>
 </head>
 <body>
     <!-- Навигация -->
@@ -42,9 +101,8 @@
 <!-- Абзац -->
 <p>Привет! Я - Сергей.</p>
 
-
 <!-- Список навыков -->
-<h2 id="skills">Мои навыки:</h2>
+<h2 id="skills" style="color: blue; font-size: 20px;">Мои навыки:</h2>
 <ul>
     <li>HTML</li>
     <li>CSS</li>
